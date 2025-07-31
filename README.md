@@ -12,4 +12,4 @@ python model_setup.py
 python app.py
 ```
 
-Now type in `127.0.0.1` in your browser to see the project.
+Now type in `127.0.0.1:5000` in your browser to see the project.
