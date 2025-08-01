@@ -61,7 +61,7 @@ def index():
                 
                 # Map the prediction (0 or 1) back to a meaningful class
                 # This mapping should be consistent with how the labels were encoded
-                class_mapping = {0: 'intrusion', 1: 'anomaly'}
+                class_mapping = {0: 'intrusion', 1: 'normal'}
                 predicted_class = class_mapping.get(prediction[0], 'Unknown')
 
                 prediction_text = f"Predicted Class: {predicted_class}"

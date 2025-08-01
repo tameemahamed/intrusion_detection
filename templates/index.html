@@ -23,7 +23,12 @@
         <form action="/" method="post">
             <div class="mb-4">
                 <label for="input_data" class="block text-gray-700 font-semibold mb-2">
-                    Enter 40 comma-separated values:
+                    <!-- Enter 40 comma-separated values: -->
+                    <!-- Enter the followings seperated by comma "duration, protocol_type, service, flag, src_bytes, dst_bytes, land, wrong_fragment, urgent, hot, num_failed_logins, logged_in, num_compromised, root_shell, su_attempted, num_root, num_file_creations, num_shells, num_access_files, num_outbound_cmds, is_host_login, is_guest_login, count, srv_count, serror_rate, srv_serror_rate, rerror_rate, srv_rerror_rate, same_srv_rate, diff_srv_rate, srv_diff_host_rate, dst_host_count, dst_host_srv_count, dst_host_same_srv_rate, dst_host_diff_srv_rate, dst_host_same_src_port_rate, dst_host_srv_diff_host_rate, dst_host_serror_rate, dst_host_srv_serror_rate, dst_host_rerror_rate, dst_host_srv_rerror_rate" -->
+                    Enter the following network features, separated by a comma.
+                    <span class="block text-sm font-normal text-gray-500 mt-1">
+                        **duration, protocol_type, service, flag, src_bytes, dst_bytes, land, wrong_fragment, urgent, hot, num_failed_logins, logged_in, num_compromised, root_shell, su_attempted, num_root, num_file_creations, num_shells, num_access_files, num_outbound_cmds, is_host_login, is_guest_login, count, srv_count, serror_rate, srv_serror_rate, rerror_rate, srv_rerror_rate, same_srv_rate, diff_srv_rate, srv_diff_host_rate, dst_host_count, dst_host_srv_count, dst_host_same_srv_rate, dst_host_diff_srv_rate, dst_host_same_src_port_rate, dst_host_srv_diff_host_rate, dst_host_serror_rate, dst_host_srv_serror_rate, dst_host_rerror_rate, dst_host_srv_rerror_rate**
+                    </span>                
                 </label>
                 <textarea
                     id="input_data"
@@ -36,7 +41,7 @@
             
             <button
                 type="submit"
-                class="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 transition duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 shadow-md"
+                class="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-800 transition duration-200 transform focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 shadow-md"
             >
                 Predict
             </button>
